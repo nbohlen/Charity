@@ -1,0 +1,209 @@
+html, body {
+  padding: 0px; 
+  margin: 0px;
+}
+a {
+  text-decoration: none
+}
+a:hover {
+  text-decoration: underline;
+}
+#content {
+  width: 957px;
+  margin: 0 auto;
+  position: relative;
+}
+.breit, .schmal {
+  margin: 0px auto;
+  position: relative;
+}
+.breit {
+  width: 900px;
+  padding: 20px 28px 40px 29px;
+  background: #d5d5d5 url(pix/borduere_unten.png) center bottom no-repeat;
+}
+.schmal {
+  width: 900px;
+  background: #f6f6f6;
+  padding: 20px;
+}
+.talk_to_the_hand {
+  display: block; 
+  padding: 21px 65px 0px 7px;
+  height: 45px;
+  width: 189px;
+  text-align: center;
+  background: url(pix/talk_to_the_hand.png);
+  font-size: 21px;
+  color: white;
+  text-shadow: black 0px -1px 3px;
+}
+#header {
+  position: relative;
+  height: 148px;
+  background: url(pix/header_background.png) center top no-repeat;
+}
+#header .logo img {
+position: absolute;
+top: 37px;
+left: 8px;
+}
+#header h1 {
+  position: absolute;
+top: 69px;
+left: 137px;
+font: bold 13px Helvetica, Arial, sans-serif;
+}  
+#header #zehn_jahre {
+  position: absolute; top: 0px; left: 410px; display: block;
+}
+#header .links {
+position: absolute;
+top: 2px;
+right: 2px;
+font-size: 8px;
+font-family: Verdana, arial, sans-serif;
+} 
+#header .links {
+  list-style-type: none;
+}
+#header .links li { 
+  display: inline;
+  padding: 0px 4px; 
+  border-left: 1px solid #ddd;
+}  
+#header .links li.first {
+  border-left: none;
+}
+#header .links  a {
+  text-decoration: none;
+  color: black;
+}  
+#header .links  a:hover {
+  text-decoration: underline;
+}
+#header .catch_phrase {
+    position: absolute;
+    top: 51px;
+    left: 584px;
+    font: bold 13.5px Verdana, Arial, sans-serif;
+}
+#header .menu {
+  list-style-type: none;
+  position: absolute;
+  left: 10px;
+  top: 118px;
+  width: 800px;
+  background: url(pix/menu_background.png) center center repeat-x;
+  height: 23px;
+  padding: 5px 0px 2px 20px;
+  margin: 0px;
+}
+#header .menu li {
+  display: inline;
+  max-width: 200px;
+  min-width: 100px;
+  padding: 0px 20px 0px 0px;
+}  
+#header .menu a {
+  color: #444;
+}
+#header .call_to_action {
+  display: block; position: absolute;
+  top: 118px;
+  right: 0px;
+  width: 96px;                                 
+  height: 26px;
+  padding: 3px 10px 3px 30px;
+  background-image: url(pix/menu_call_to_action_button.png);
+  color: white;
+}
+#teaser {
+  min-height: 400px;
+  max-height: 1000px;
+  z-index: 1;
+}
+#teaser .text {
+  padding: 30px 600px 30px 30px ;
+}
+#teaser img {
+  background-image: url(pix/teaser_bildrahmen.png);
+  position: absolute;
+  bottom: -29px;
+  right: 20px;
+  width: 490px;
+  height: 335px;
+  padding: 19px 19px 17px 21px;
+}
+ul.graph {
+  padding: 11px;
+  width: 450px;
+  list-style-type: none;
+  background-color: white;
+}
+ul.graph li {margin-top: 11px; padding-left: 11px; background-color: #e5e5e5}
+ul.graph li.first { border-left: 1px solid red; margin-top: 0px;}
+ul.graph li.second { border-left: 1px solid yellow; }
+ul.graph li.third { border-left: 1px solid blue; } 
+ul.graph li.fourth { border-left: 1px solid #d000d0; } 
+ul.graph li.fifth { border-left: 1px solid green; }
+ul.graph li.about_100 { border-left-width: 300px; }
+ul.graph li.about_95 { border-left-width: 285px; }
+ul.graph li.about_90 { border-left-width: 270px; }
+ul.graph li.about_85 { border-left-width: 255px; }
+ul.graph li.about_80 { border-left-width: 240px; }
+#so_stehts .talk_to_the_hand {
+  position: absolute;
+  right: 30px;
+  top: 150px;
+}
+#timeline_teaser .text {
+  width: 470px;
+  height: 280px;
+  padding: 15px 49px 15px 18px;
+  background-image: url(pix/timeline_teaser_text.png);
+}
+#timeline_teaser .strip {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  width: 210px;
+}
+#timeline_teaser .strip .top       { height: 17px; background-image: url(pix/timeline_teaser_top.png) }
+#timeline_teaser .strip .middle { height: 250px; background-image: url(pix/timeline_teaser_middle.png); font: bold 32px Verdana,Arial,sans-serif; line-height: 70px; color: white; padding-top: 30px; text-align: center }
+#timeline_teaser .strip .bottom { height: 17px; background-image: url(pix/timeline_teaser_bottom.png) }
+.schniepel {
+    background: url(pix/schniepel.png) center top no-repeat;
+    height: 108px;
+    padding-bottom: 30px;
+}
+#footer {
+  background-image: url(pix/footer_background.png);
+} 
+#footer .part1 {
+  background-color: #e5e5e5;
+  height: 53px;
+  width: 957px;
+  margin: 0 auto;
+  font: 34px Verdana,arial,sans-serif;
+  padding: 25px 0px 0px 40px;
+}
+#footer .part2 {
+  background-color: #ccc;
+  height: 196px;
+  font: 12px Verdana, Arial, sans-serif;
+  width: 957px;
+  margin: 0 auto;
+}
+#footer a {
+  text-decoration: none;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+#footer ul {
+  list-style-type: none;
+  width: 120px;
+  padding: 20px;  
+  float: left;
+}
