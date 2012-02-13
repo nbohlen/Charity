@@ -140,7 +140,7 @@ font-family: Verdana, arial, sans-serif;
 }
 
 .button.large:hover { background-position: left -167px;}
-.button.large:active { background-position: left -233px; padding: 26px 0 0 44px; height: 46px; width: 211px;}
+.button.large:active { background-position: left -233px; padding: 26px 0 0 44px; height: 46px; width: 217px;}
 
 
 #teaser {
@@ -169,11 +169,11 @@ ul.graph {
   background-color: white;
 }
 ul.graph li {margin-top: 11px; padding-left: 11px; background-color: #e5e5e5}
-ul.graph li.first { border-left: 1px solid red; margin-top: 0px;}
-ul.graph li.second { border-left: 1px solid yellow; }
-ul.graph li.third { border-left: 1px solid blue; } 
-ul.graph li.fourth { border-left: 1px solid #d000d0; } 
-ul.graph li.fifth { border-left: 1px solid green; }
+ul.graph li.first { border-left: 1px solid #E43834; margin-top: 0px;}
+ul.graph li.second { border-left: 1px solid #FCD209; }
+ul.graph li.third { border-left: 1px solid #4687C7; } 
+ul.graph li.fourth { border-left: 1px solid #4BB549; } 
+ul.graph li.fifth { border-left: 1px solid #FFA10B; }
 ul.graph li.about_100 { border-left-width: 300px; }
 ul.graph li.about_95 { border-left-width: 285px; }
 ul.graph li.about_90 { border-left-width: 270px; }
