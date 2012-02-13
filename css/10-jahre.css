@@ -369,6 +369,30 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 .choice_container .choice .slider:hover .name {
   border: 1px solid #bbbbbb;
 }
+.choice { cursor: pointer; }
+.choice .title {
+  text-align: center;
+}
+.choice .title h3 {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+}
+.choice .title div {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 6px;
+}
+.choice .more {
+  font-size: 10px;
+  line-height: 11px;
+  text-align: justify;
+}
+.choice a.popup_trigger {
+   text-align: center;
+  color: blue;
+  text-decoration: underline;
+}
 .choice_container .choice  a.abstimmen {
   display: block;
   margin: 260px auto 20px auto;
@@ -381,3 +405,57 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   font-size: 13px;
 
 }
+.popup {
+  display: none;
+  position: fixed; top: 50%; left: 50%;
+  margin-left: -330px;
+  margin-top: -290px;
+  width: 660px; height: 580px;
+  background-color: white; 
+  border: 1px solid #888;
+  -moz-border-radius: 10px; /* Firefox */
+  -webkit-border-radius: 10px; /* Safari, Chrome */
+  border-radius: 10px; /* CSS3 */
+  padding: 10px 45px;
+  box-shadow: 0px 0px 10px #888;
+  z-index: 100;
+}
+.popup .controls a ,
+.popup .controls a:hover {text-decoration: none;}
+  
+.popup .controls .switch_left {
+  background: url("../pix/button_rechts_links.png") left center no-repeat;
+  position: absolute;  left: -14px; top: 200px;  width: 51px;  height: 65px;
+}
+.popup .controls .switch_right {
+  background: url("../pix/button_rechts_links.png") right center no-repeat;
+  position: absolute;  right: -14px; top: 200px;  width: 51px;  height: 65px;
+}
+.popup .controls .closer {
+  background: url("../pix/x_macht_zu.png") left top no-repeat;
+  position: absolute;  right: 10px; top: 10px;  width: 22px;  height: 22px;
+}
+.popup .controls .closer:hover {
+  background: url("../pix/x_macht_zu.png") left bottom no-repeat;
+}
+.popup .switchable {
+  display: none;
+ }
+ .popup .project .logo {
+   float: left;
+}
+ .popup .project h3 {
+   font-size: 16px;
+   font-weight: bold;
+ }
+  .popup .project .bigpic {
+    float: right;
+    padding: 0px 0px 15px 15px;
+    width: 320px;
+    height: 262px;
+ }
+ .popup .project .abstimmen {
+   clear: both;
+   display: block;
+   margin: 30px auto;
+ }
