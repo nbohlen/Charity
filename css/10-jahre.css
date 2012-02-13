@@ -22,7 +22,7 @@ a:hover {
   margin: 0 auto;
   position: relative;
 }
-.breit, .schmal {
+.breit, .schmal, .ohne {
   margin: 0px auto;
   position: relative;
 }
@@ -36,7 +36,9 @@ a:hover {
   background: #f6f6f6;
   padding: 20px;
 }
-
+.ohne {
+  width: 740px;
+}
 #header {
   position: relative;
   height: 147px;
@@ -166,23 +168,42 @@ font-family: Verdana, arial, sans-serif;
   height: 308px;
   padding: 27px 20px 37px 36px;
 }
-ul.graph {
+ul.graph.small {
   padding: 11px;
   width: 450px;
   list-style-type: none;
   background-color: white;
 }
-ul.graph li {margin-top: 11px; padding-left: 11px; background-color: #e5e5e5}
-ul.graph li.first { border-left: 1px solid #E43834; margin-top: 0px;}
-ul.graph li.second { border-left: 1px solid #FCD209; }
-ul.graph li.third { border-left: 1px solid #4687C7; } 
-ul.graph li.fourth { border-left: 1px solid #4BB549; } 
-ul.graph li.fifth { border-left: 1px solid #FFA10B; }
-ul.graph li.about_100 { border-left-width: 300px; }
-ul.graph li.about_95 { border-left-width: 285px; }
-ul.graph li.about_90 { border-left-width: 270px; }
-ul.graph li.about_85 { border-left-width: 255px; }
-ul.graph li.about_80 { border-left-width: 240px; }
+ul.graph.small li {margin-top: 11px; padding-left: 11px; background-color: #e5e5e5}
+ul.graph.small li.first { border-left: 1px solid #E43834; margin-top: 0px;}
+ul.graph.small li.second { border-left: 1px solid #FCD209; }
+ul.graph.small li.third { border-left: 1px solid #4687C7; } 
+ul.graph.small li.fourth { border-left: 1px solid #4BB549; } 
+ul.graph.small li.fifth { border-left: 1px solid #FFA10B; }
+ul.graph.small li.about_100 { border-left-width: 300px; }
+ul.graph.small li.about_95 { border-left-width: 285px; }
+ul.graph.small li.about_90 { border-left-width: 270px; }
+ul.graph.small li.about_85 { border-left-width: 255px; }
+ul.graph.small li.about_80 { border-left-width: 240px; }
+
+ul.graph.medium {
+  padding: 20px;
+  width: 740px;
+  list-style-type: none;
+  background-color: white;
+}
+ul.graph.medium li {margin-top: 20px; padding-left: 20px; background-color: #e5e5e5}
+ul.graph.medium li.first { border-left: 1px solid #E43834; margin-top: 0px;}
+ul.graph.medium li.second { border-left: 1px solid #FCD209; }
+ul.graph.medium li.third { border-left: 1px solid #4687C7; } 
+ul.graph.medium li.fourth { border-left: 1px solid #4BB549; } 
+ul.graph.medium li.fifth { border-left: 1px solid #FFA10B; }
+ul.graph.medium li.about_100 { border-left-width: 440px; }
+ul.graph.medium li.about_95 { border-left-width: 418px; }
+ul.graph.medium li.about_90 { border-left-width: 396px; }
+ul.graph.medium li.about_85 { border-left-width: 374px; }
+ul.graph.medium li.about_80 { border-left-width: 352px; }
+
 #so_stehts .talk_to_the_hand {
   position: absolute;
   right: 90px;
