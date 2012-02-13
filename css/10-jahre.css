@@ -17,7 +17,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+#content {
+  width: 957px;
+  margin: 0 auto;
+  position: relative;
+}
 .breit, .schmal {
   margin: 0px auto;
   position: relative;
@@ -240,4 +244,103 @@ ul.graph li.about_80 { border-left-width: 240px; }
   width: 120px;
   padding: 20px;  
   float: left;
+}
+
+/* month */
+#month h2 {
+  display: block;
+  margin: 10px auto 20px;
+  width: 470px;
+  height: 33px;
+  padding: 15px;
+  text-align: center;
+  background-image: url(../pix/monat_schild.png);
+}
+#month .text {
+  text-align: center;
+}
+/* choices */
+#choices .choice_container {
+  margin: 10px auto;
+  width: 896px;
+  height: 300px;
+  position: relative;
+  
+}
+
+.choice_container .choice {
+  position: absolute;
+  top: 0px;
+  width: 179px;
+  height: 300px;
+  border-right: none;
+}
+.choice_container .first { left: 0px; }
+.choice_container .second { left: 179px; }
+.choice_container .third { left: 358px; }
+.choice_container .fourth { left: 537px; }
+.choice_container .fifth { left: 716px; }
+
+.choice_container .choice .information {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 178px;
+  height: 247px;  
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+}
+.choice_container .choice .fifth { border-right: 1px solid #e5e5e5}
+.choice_container .choice .information .public {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 131px;
+  width: 160px;
+  opacity: 1;
+  -webkit-transition: all .5s ease-in-out;
+
+}
+.choice_container .choice .information .name {
+  position: absolute;
+  top: 141px;
+  left: 10px;
+  height: 46px;
+  width: 158px;
+  border: 1px solid #ffffff;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.choice_container .choice .information .title {
+  margin-top: 200px;
+}
+.choice_container .choice .slider {
+  position: absolute;
+  top: 0px; left: 0px;
+  -webkit-transition: all .5s ease-in-out;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.choice_container .choice .slider:hover {
+  position: absolute;
+  top: -130px; left: 0px;
+  background-color: #d5d5d5;
+}
+.choice_container .choice .slider:hover .public {
+  opacity: 0;
+}
+.choice_container .choice .slider:hover .name {
+  border: 1px solid #bbbbbb;
+}
+.choice_container .choice  a.abstimmen {
+  display: block;
+  margin: 260px auto 20px auto;
+  background-image: url(../pix/talk_to_the_small_hand.png);
+  padding: 5px 39px 4px 4px;
+  width: 112px;
+  height: 23px;
+  color: white; text-align: center;
+  text-shadow: black 0px -1px 3px;
+  font-size: 13px;
+
 }
