@@ -185,18 +185,34 @@ ul.graph li.about_80 { border-left-width: 240px; }
   top: 90px;
 }
 
+#so_gehts { 
+  background-image: url(../pix/colored_hands.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height:  560px;
+  }
+
 #so_gehts ul { height: 80px; background: transparent url(../pix/so_gehts_nav.png) no-repeat;}
 #so_gehts ul li { float: left; padding-top: 30px; padding-bottom: 30px; } 
 #so_gehts ul li.first { width: 244px; padding-left: 70px; }
 #so_gehts ul li.second { width: 240px; padding-left: 65px; }
 #so_gehts ul li.third { width: 210px; padding-left: 70px; padding-top: 20px; padding-bottom: 20px; }
 
+#timeline_teaser,
+#blog_roll{
+  background-image: url(../pix/scherpe_trans.png);
+  background-repeat: repeat-y;
+  background-position: top center;
+}
+
+#timeline_teaser{ padding-top: 60px;}
 #timeline_teaser .text {
   width: 470px;
   height: 280px;
   padding: 15px 49px 15px 18px;
   background-image: url(../pix/timeline_teaser_text.png);
 }
+
 #timeline_teaser .strip {
   position: absolute;
   top: 80px;
