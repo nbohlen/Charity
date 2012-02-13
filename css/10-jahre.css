@@ -17,8 +17,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-.breit, .schmal {
+#content {
+  width: 957px;
+  margin: 0 auto;
+  position: relative;
+}
+.breit, .schmal, .ohne {
   margin: 0px auto;
   position: relative;
 }
@@ -32,7 +36,9 @@ a:hover {
   background: #f6f6f6;
   padding: 20px;
 }
-
+.ohne {
+  width: 740px;
+}
 #header {
   position: relative;
   height: 147px;
@@ -162,23 +168,42 @@ font-family: Verdana, arial, sans-serif;
   height: 308px;
   padding: 27px 20px 37px 36px;
 }
-ul.graph {
+ul.graph.small {
   padding: 11px;
   width: 450px;
   list-style-type: none;
   background-color: white;
 }
-ul.graph li {margin-top: 11px; padding-left: 11px; background-color: #e5e5e5}
-ul.graph li.first { border-left: 1px solid #E43834; margin-top: 0px;}
-ul.graph li.second { border-left: 1px solid #FCD209; }
-ul.graph li.third { border-left: 1px solid #4687C7; } 
-ul.graph li.fourth { border-left: 1px solid #4BB549; } 
-ul.graph li.fifth { border-left: 1px solid #FFA10B; }
-ul.graph li.about_100 { border-left-width: 300px; }
-ul.graph li.about_95 { border-left-width: 285px; }
-ul.graph li.about_90 { border-left-width: 270px; }
-ul.graph li.about_85 { border-left-width: 255px; }
-ul.graph li.about_80 { border-left-width: 240px; }
+ul.graph.small li {margin-top: 11px; padding-left: 11px; background-color: #e5e5e5}
+ul.graph.small li.first { border-left: 1px solid #E43834; margin-top: 0px;}
+ul.graph.small li.second { border-left: 1px solid #FCD209; }
+ul.graph.small li.third { border-left: 1px solid #4687C7; } 
+ul.graph.small li.fourth { border-left: 1px solid #4BB549; } 
+ul.graph.small li.fifth { border-left: 1px solid #FFA10B; }
+ul.graph.small li.about_100 { border-left-width: 300px; }
+ul.graph.small li.about_95 { border-left-width: 285px; }
+ul.graph.small li.about_90 { border-left-width: 270px; }
+ul.graph.small li.about_85 { border-left-width: 255px; }
+ul.graph.small li.about_80 { border-left-width: 240px; }
+
+ul.graph.medium {
+  padding: 20px;
+  width: 740px;
+  list-style-type: none;
+  background-color: white;
+}
+ul.graph.medium li {margin-top: 20px; padding-left: 20px; background-color: #e5e5e5}
+ul.graph.medium li.first { border-left: 1px solid #E43834; margin-top: 0px;}
+ul.graph.medium li.second { border-left: 1px solid #FCD209; }
+ul.graph.medium li.third { border-left: 1px solid #4687C7; } 
+ul.graph.medium li.fourth { border-left: 1px solid #4BB549; } 
+ul.graph.medium li.fifth { border-left: 1px solid #FFA10B; }
+ul.graph.medium li.about_100 { border-left-width: 440px; }
+ul.graph.medium li.about_95 { border-left-width: 418px; }
+ul.graph.medium li.about_90 { border-left-width: 396px; }
+ul.graph.medium li.about_85 { border-left-width: 374px; }
+ul.graph.medium li.about_80 { border-left-width: 352px; }
+
 #so_stehts .talk_to_the_hand {
   position: absolute;
   right: 90px;
@@ -257,3 +282,180 @@ ul.graph li.about_80 { border-left-width: 240px; }
   padding: 20px;  
   float: left;
 }
+
+/* month */
+#month h2 {
+  display: block;
+  margin: 10px auto 20px;
+  width: 470px;
+  height: 33px;
+  padding: 15px;
+  text-align: center;
+  background-image: url(../pix/monat_schild.png);
+}
+#month .text {
+  text-align: center;
+}
+/* choices */
+#choices .choice_container {
+  margin: 10px auto;
+  width: 896px;
+  height: 300px;
+  position: relative;
+  
+}
+
+.choice_container .choice {
+  position: absolute;
+  top: 0px;
+  width: 179px;
+  height: 300px;
+  border-right: none;
+}
+.choice_container .first { left: 0px; }
+.choice_container .second { left: 179px; }
+.choice_container .third { left: 358px; }
+.choice_container .fourth { left: 537px; }
+.choice_container .fifth { left: 716px; }
+
+.choice_container .choice .information {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 178px;
+  height: 247px;  
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+}
+.choice_container .choice .fifth { border-right: 1px solid #e5e5e5}
+.choice_container .choice .information .public {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 131px;
+  width: 160px;
+  opacity: 1;
+  -webkit-transition: all .5s ease-in-out;
+
+}
+.choice_container .choice .information .name {
+  position: absolute;
+  top: 141px;
+  left: 10px;
+  height: 46px;
+  width: 158px;
+  border: 1px solid #ffffff;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.choice_container .choice .information .title {
+  margin-top: 200px;
+}
+.choice_container .choice .slider {
+  position: absolute;
+  top: 0px; left: 0px;
+  -webkit-transition: all .5s ease-in-out;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.choice_container .choice .slider:hover {
+  position: absolute;
+  top: -130px; left: 0px;
+  background-color: #d5d5d5;
+}
+.choice_container .choice .slider:hover .public {
+  opacity: 0;
+}
+.choice_container .choice .slider:hover .name {
+  border: 1px solid #bbbbbb;
+}
+.choice { cursor: pointer; }
+.choice .title {
+  text-align: center;
+}
+.choice .title h3 {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: bold;
+}
+.choice .title div {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 6px;
+}
+.choice .more {
+  font-size: 10px;
+  line-height: 11px;
+  text-align: justify;
+}
+.choice a.popup_trigger {
+   text-align: center;
+  color: blue;
+  text-decoration: underline;
+}
+.choice_container .choice  a.abstimmen {
+  display: block;
+  margin: 260px auto 20px auto;
+  background-image: url(../pix/talk_to_the_small_hand.png);
+  padding: 5px 39px 4px 4px;
+  width: 112px;
+  height: 23px;
+  color: white; text-align: center;
+  text-shadow: black 0px -1px 3px;
+  font-size: 13px;
+
+}
+.popup {
+  display: none;
+  position: fixed; top: 50%; left: 50%;
+  margin-left: -330px;
+  margin-top: -290px;
+  width: 660px; height: 580px;
+  background-color: white; 
+  border: 1px solid #888;
+  -moz-border-radius: 10px; /* Firefox */
+  -webkit-border-radius: 10px; /* Safari, Chrome */
+  border-radius: 10px; /* CSS3 */
+  padding: 10px 45px;
+  box-shadow: 0px 0px 10px #888;
+  z-index: 100;
+}
+.popup .controls a ,
+.popup .controls a:hover {text-decoration: none;}
+  
+.popup .controls .switch_left {
+  background: url("../pix/button_rechts_links.png") left center no-repeat;
+  position: absolute;  left: -14px; top: 200px;  width: 51px;  height: 65px;
+}
+.popup .controls .switch_right {
+  background: url("../pix/button_rechts_links.png") right center no-repeat;
+  position: absolute;  right: -14px; top: 200px;  width: 51px;  height: 65px;
+}
+.popup .controls .closer {
+  background: url("../pix/x_macht_zu.png") left top no-repeat;
+  position: absolute;  right: 10px; top: 10px;  width: 22px;  height: 22px;
+}
+.popup .controls .closer:hover {
+  background: url("../pix/x_macht_zu.png") left bottom no-repeat;
+}
+.popup .switchable {
+  display: none;
+ }
+ .popup .project .logo {
+   float: left;
+}
+ .popup .project h3 {
+   font-size: 16px;
+   font-weight: bold;
+ }
+  .popup .project .bigpic {
+    float: right;
+    padding: 0px 0px 15px 15px;
+    width: 320px;
+    height: 262px;
+ }
+ .popup .project .abstimmen {
+   clear: both;
+   display: block;
+   margin: 30px auto;
+ }
