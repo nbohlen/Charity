@@ -57,11 +57,11 @@ top: 37px;
 left: 8px;
 }
 #header h1 {
+  color: #888888;
+  font-size: 12px;
+  left: 61px;
   position: absolute;
-top: 77px;
-left: 140px;
-color: #666666;
-font: 13px Helvetica, Arial, sans-serif;
+  top: 69px;
 }  
 #header #zehn_jahre {
   position: absolute; top: 0px; left: 410px; display: block;
@@ -70,8 +70,7 @@ font: 13px Helvetica, Arial, sans-serif;
 position: absolute;
 top: 5px;
 right: 10px;
-font-size: 8px;
-font-family: Verdana, arial, sans-serif;
+font-size: 10px;
 } 
 #header .links {
   list-style-type: none;
@@ -96,7 +95,7 @@ font-family: Verdana, arial, sans-serif;
     top: 51px;
     right: 10px;
     color: #003A62;
-    font: 15px Verdana, Arial, sans-serif;
+    font: 15px;
 }
 
 #header .menu {
@@ -311,7 +310,7 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   position: relative;
   background-color: #ccc;
   height: 196px;
-  font: 12px Verdana, Arial, sans-serif;
+  font-size: 12px;
   width: 957px;
   margin: 0 auto;
 }
