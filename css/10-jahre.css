@@ -33,12 +33,15 @@ a:hover {
 .breit {
   width: 900px;
   padding: 20px 28px 40px 29px;
-  background: #d5d5d5 url(../pix/borduere_unten.png) center bottom no-repeat;
+  background: transparent url(../pix/borduere_unten.png) center bottom no-repeat;
 }
 .schmal {
   width: 900px;
   background: #f6f6f6;
   padding: 20px;
+  background-image: url(../pix/scherpe_trans.png);
+  background-repeat: repeat-y;
+  background-position: top center;
 }
 .ohne {
   width: 740px;
@@ -167,12 +170,15 @@ font-family: Verdana, arial, sans-serif;
 .button.large:hover { background-position: left -167px;}
 .button.large:active { background-position: left -233px; padding: 26px 0 0 44px; height: 46px; width: 217px;}
 
+#teaser,
+#social_log { background-image: none; }
 
 #teaser {
   min-height: 300px;
   max-height: 1000px;
   z-index: 1;
 }
+
 #teaser .text {
   padding: 50px 500px 30px 20px;
 }
@@ -348,6 +354,9 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   position: relative;
   
 }
+
+#month { padding-bottom: 0;}
+#choices { padding-bottom: 80px;}
 
 .choice_container .choice {
   position: absolute;
