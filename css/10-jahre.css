@@ -7,8 +7,12 @@ html, body {
   color: #444444;
 }
 
+body {
+  background: url(../pix/background.jpg);
+}
+
 h1{ }
-h2{ font-weight: normal; font-size: 36px; line-height: 43px;}
+h2{ margin-bottom: 20px; font-weight: normal; font-size: 36px; line-height: 43px;}
 h3{ margin-bottom: 10px; font-weight: normal; font-size: 22px; line-height: 26px;}
 
 a {
@@ -91,6 +95,7 @@ font-family: Verdana, arial, sans-serif;
     color: #003A62;
     font: 15px Verdana, Arial, sans-serif;
 }
+
 #header .menu {
   list-style-type: none;
   position: absolute;
@@ -119,21 +124,35 @@ font-family: Verdana, arial, sans-serif;
   right: 6px;
 }
 
+.yellow_snow {
+  background: url("../pix/yellow_snow.png") no-repeat scroll left bottom transparent;
+  padding-bottom: 5px;
+  padding-left: 3px;
+}
+
+.yellow_snow_large_center {
+  background: url("../pix/yellow_snow_large.png") no-repeat scroll center bottom transparent;
+  padding-bottom: 10px;
+  padding-left: 3px;
+  text-align: center;
+}
+
 .button {
   background: transparent url(../pix/button_sprites.png) no-repeat left top;
   color: white;
+  text-shadow: #003A62 0px -1px 1px;
 }
 
 .button.small {
-  width: 103px;                                 
+  font-size: 13px;
   height: 27px;
-  font-size: 14px;
-  padding: 5px 0 0 33px;
+  padding: 5px 0 0 13px;
+  width: 123px;
 }
 
 .button:hover { text-decoration: none; }
 .button.small:hover { background-position: left -33px; }
-.button.small:active{ background-position: left -66px; width: 106px; height: 24px; padding: 8px 0 0 30px;}
+.button.small:active{ background-position: left -66px; width: 126px; height: 24px; padding: 8px 0 0 10px;}
 
 .button.large { 
   display: block; 
@@ -187,12 +206,12 @@ ul.graph.small li.about_85 { border-left-width: 255px; }
 ul.graph.small li.about_80 { border-left-width: 240px; }
 
 ul.graph.medium {
-  padding: 20px;
   width: 740px;
   list-style-type: none;
   background-color: white;
+  margin-bottom: 100px;
 }
-ul.graph.medium li {margin-top: 20px; padding-left: 20px; background-color: #e5e5e5}
+ul.graph.medium li {margin-top: 15px; padding-left: 10px; background-color: #e5e5e5; line-height: 30px;}
 ul.graph.medium li.first { border-left: 1px solid #E43834; margin-top: 0px;}
 ul.graph.medium li.second { border-left: 1px solid #FCD209; }
 ul.graph.medium li.third { border-left: 1px solid #4687C7; } 
@@ -211,17 +230,26 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 }
 
 #so_gehts { 
-  background-image: url(../pix/colored_hands.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   min-height:  560px;
   }
 
+#so_gehts.first { background-image: url(../pix/colored_hands.jpg); }
 #so_gehts ul { height: 80px; background: transparent url(../pix/so_gehts_nav.png) no-repeat;}
+#so_gehts.first ul  { background-position: left top; }
+#so_gehts.second ul { background-position: left -80px; }
+#so_gehts.third ul  { background-position: left -160px; }
 #so_gehts ul li { float: left; padding-top: 30px; padding-bottom: 30px; } 
 #so_gehts ul li.first { width: 244px; padding-left: 70px; }
-#so_gehts ul li.second { width: 240px; padding-left: 65px; }
+#so_gehts ul li.second { width: 240px; padding-left: 65px;}
 #so_gehts ul li.third { width: 210px; padding-left: 70px; padding-top: 20px; padding-bottom: 20px; }
+
+
+
+#so_gehts h2,
+#timeline_teaser h2,
+#blog_roll h2 { text-align: center;}
 
 #timeline_teaser,
 #blog_roll{
@@ -230,40 +258,51 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   background-position: top center;
 }
 
-#timeline_teaser{ padding-top: 60px;}
+#timeline_teaser{ padding-top: 60px; min-height: 500px;}
 #timeline_teaser .text {
-  width: 470px;
+  width: 440px;
   height: 280px;
-  padding: 15px 49px 15px 18px;
-  background-image: url(../pix/timeline_teaser_text.png);
+  padding: 30px 70px 15px 30px;
+  margin-top: 60px;
+  margin-left: 80px;
+  background: transparent url(../pix/timeline_teaser_text.png) no-repeat;
 }
 
 #timeline_teaser .strip {
   position: absolute;
-  top: 80px;
-  right: 30px;
+  top: 120px;
+  right: 80px;
   width: 210px;
 }
-#timeline_teaser .strip .top       { height: 17px; background-image: url(../pix/timeline_teaser_top.png) }
-#timeline_teaser .strip .middle { height: 250px; background-image: url(../pix/timeline_teaser_middle.png); font: bold 32px Verdana,Arial,sans-serif; line-height: 70px; color: white; padding-top: 30px; text-align: center }
-#timeline_teaser .strip .bottom { height: 17px; background-image: url(../pix/timeline_teaser_bottom.png) }
+
+#blog_roll .entry { position: relative; margin: 40px 0; padding: 0 40px;}
+#blog_roll .entry .left_col { position: absolute; }
+#blog_roll .entry .left_col span.date { display: block; font-size: 11px;}
+#blog_roll .entry .entry_body { padding-left: 300px;}
+
 .schniepel {
     background: url(../pix/schniepel.png) center top no-repeat;
     height: 108px;
     padding-bottom: 30px;
 }
+
 #footer {
   background-image: url(../pix/footer_background.png);
 } 
 #footer .part1 {
   background-color: #e5e5e5;
-  height: 53px;
-  width: 957px;
   margin: 0 auto;
-  font: 34px Verdana,arial,sans-serif;
-  padding: 25px 0px 0px 40px;
 }
+
+#footer .part1 h2 {
+  line-height: 78px;
+  margin: 0;
+}
+
+#footer .part2 #footer_symbol { position: absolute; right: 0; top: 50px;}
+
 #footer .part2 {
+  position: relative;
   background-color: #ccc;
   height: 196px;
   font: 12px Verdana, Arial, sans-serif;
@@ -279,19 +318,24 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 #footer ul {
   list-style-type: none;
   width: 120px;
-  padding: 20px;  
+  padding: 20px;
+  padding-left: 0;  
   float: left;
+}
+#footer ul li { margin: 3px 0;}
+#footer ul li a {
+  color: #444444;
+  font-size: 11px;
 }
 
 /* month */
 #month h2 {
+  background: url("../pix/monat_schild.png") no-repeat;
   display: block;
+  line-height: 63px;
   margin: 10px auto 20px;
-  width: 470px;
-  height: 33px;
-  padding: 15px;
   text-align: center;
-  background-image: url(../pix/monat_schild.png);
+  width: 500px;
 }
 #month .text {
   text-align: center;
@@ -402,21 +446,13 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 .choice_container .choice  a.abstimmen {
   display: block;
   margin: 260px auto 20px auto;
-  background-image: url(../pix/talk_to_the_small_hand.png);
-  padding: 5px 39px 4px 4px;
-  width: 112px;
-  height: 23px;
-  color: white; text-align: center;
-  text-shadow: black 0px -1px 3px;
-  font-size: 13px;
-
 }
 .popup {
   display: none;
   position: fixed; top: 50%; left: 50%;
   margin-left: -330px;
   margin-top: -290px;
-  width: 660px; height: 580px;
+  width: 660px; height: 480px;
   background-color: white; 
   border: 1px solid #888;
   -moz-border-radius: 10px; /* Firefox */
@@ -428,15 +464,20 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 }
 .popup .controls a ,
 .popup .controls a:hover {text-decoration: none;}
-  
-.popup .controls .switch_left {
-  background: url("../pix/button_rechts_links.png") left center no-repeat;
-  position: absolute;  left: -14px; top: 200px;  width: 51px;  height: 65px;
-}
+
+.switch_left, .switch_right { height: 65px; position: absolute; width: 51px; }
+
+.switch_left  { left: -14px; background: url("../pix/button_rechts_links.png") no-repeat left top ; } 
+.switch_right { right: -14px; background: url("../pix/button_rechts_links.png") no-repeat right top ; } 
+
+.popup .controls .switch_left,
 .popup .controls .switch_right {
-  background: url("../pix/button_rechts_links.png") right center no-repeat;
-  position: absolute;  right: -14px; top: 200px;  width: 51px;  height: 65px;
+  top: 200px;   
 }
+
+.switch_right:hover { background-position: right bottom; }
+.switch_left:hover { background-position: left bottom; }
+
 .popup .controls .closer {
   background: url("../pix/x_macht_zu.png") left top no-repeat;
   position: absolute;  right: 10px; top: 10px;  width: 22px;  height: 22px;
@@ -448,12 +489,8 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   display: none;
  }
  .popup .project .logo {
-   float: left;
 }
- .popup .project h3 {
-   font-size: 16px;
-   font-weight: bold;
- }
+
   .popup .project .bigpic {
     float: right;
     padding: 0px 0px 15px 15px;
