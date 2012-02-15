@@ -43,6 +43,27 @@ a:hover {
   background-repeat: repeat-y;
   background-position: top center;
 }
+
+.teaser_box {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.teaser_box h2,
+.teaser_box p {
+  padding: 0 50px;
+}
+
+.teaser_box h2 {
+  font-size: 50px;
+  line-height: 60px;
+  margin-top: 14px;
+}
+
+.teaser_box p {
+  font-size: 20px;
+  line-height: 24px;
+}
+
 .ohne {
   width: 740px;
 }
@@ -183,6 +204,7 @@ font-size: 10px;
 }
 
 #teaser .text h2 { margin-bottom: 20px;}
+
 #teaser img {
   background-image: url(../pix/teaser_bildrahmen.png);
   position: absolute;
@@ -280,6 +302,44 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   width: 210px;
 }
 
+.timeline {
+  background: transparent url(../pix/timeline_middle.png) repeat-y center top;
+  min-height: 800px;
+  padding: 40px 10px;
+  position: relative;
+}
+
+.timeline .bubble {
+  padding: 20px;
+  width: 350px;
+  position: absolute;
+  border: 1px solid #ccc;
+}
+
+.timeline .bubble .year {
+  position: absolute;
+  font-size: 33px;
+  color: white;
+  font-weight: bold;
+}
+
+.timeline .bubble .arrow {
+  background: url(../pix/bubble_arrows.png) no-repeat;
+  width: 23px;
+  height: 36px;
+  position: absolute;
+  top: 90px;
+}
+
+.timeline .bubble.left .arrow { background-position: left top; right: -23px;}
+.timeline .bubble.right .arrow { background-position: right top; left: -23px;}
+
+.timeline .bubble.left { left: 10px;}
+.timeline .bubble.right { right: 10px; }
+
+.timeline .bubble.left .year { right: -115px; top: 100px; }
+.timeline .bubble.right .year { left: -115px; top: 100px; }
+
 #blog_roll .entry { position: relative; margin: 40px 0; padding: 0 40px;}
 #blog_roll .entry .left_col { position: absolute; }
 #blog_roll .entry .left_col span.date { display: block; font-size: 11px;}
@@ -335,6 +395,8 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 
 /* month */
 #month h2 {
+  padding: 0;
+  font-size: 40px;
   background: url("../pix/monat_schild.png") no-repeat;
   display: block;
   line-height: 63px;
@@ -342,9 +404,7 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   text-align: center;
   width: 500px;
 }
-#month .text {
-  text-align: center;
-}
+
 /* choices */
 #choices .choice_container {
   margin: 10px auto;
@@ -412,8 +472,12 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   position: absolute;
   top: 0px; left: 0px;
   -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   background-color: #ffffff;
   padding: 10px;
+  height: 357px;
 }
 .choice_container .choice .slider:hover {
   position: absolute;
@@ -437,19 +501,21 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   font-weight: bold;
 }
 .choice .title div {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 13px;
+  line-height: 14px;
   margin-bottom: 6px;
 }
 .choice .more {
-  font-size: 10px;
-  line-height: 11px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 20px;
   text-align: justify;
 }
 .choice a.popup_trigger {
-   text-align: center;
-  color: blue;
+  text-align: center;
   text-decoration: underline;
+  font-size: 14px;
+  display: block;
 }
 .choice_container .choice  a.abstimmen {
   display: block;
