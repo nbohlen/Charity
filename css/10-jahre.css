@@ -46,7 +46,6 @@ a:hover {
 
 .teaser_box {
   text-align: center;
-  padding-bottom: 40px;
 }
 .teaser_box h2,
 .teaser_box p {
@@ -60,9 +59,11 @@ a:hover {
 }
 
 .teaser_box p {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
 }
+
+p.alert { font-weight: bold; margin: 10px 0;}
 
 .ohne {
   width: 740px;
@@ -407,15 +408,14 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 
 /* choices */
 #choices .choice_container {
-  margin: 10px auto;
+  margin: 0 auto;
   width: 896px;
   height: 300px;
   position: relative;
   
 }
 
-#month { padding-bottom: 0;}
-#choices { padding-bottom: 80px;}
+#choices { padding-bottom: 80px; padding-top: 0;}
 
 .choice_container .choice {
   position: absolute;
@@ -526,13 +526,13 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   position: fixed; top: 50%; left: 50%;
   margin-left: -330px;
   margin-top: -290px;
-  width: 660px; height: 480px;
+  width: 645px; height: 480px;
   background-color: white; 
   border: 1px solid #888;
   -moz-border-radius: 10px; /* Firefox */
   -webkit-border-radius: 10px; /* Safari, Chrome */
   border-radius: 10px; /* CSS3 */
-  padding: 10px 45px;
+  padding: 10px 60px;
   box-shadow: 0px 0px 10px #888;
   z-index: 100;
 }
@@ -562,14 +562,25 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 .popup .switchable {
   display: none;
  }
- .popup .project .logo {
+
+
+.popup .project header {
+  height: 60px;
+  padding: 40px 0;
 }
+
+.popup .project header a {
+  float: right;
+  margin-top: -14px;
+}
+
+.popup .project header h3 { width: 500px;}
 
   .popup .project .bigpic {
     float: right;
-    padding: 0px 0px 15px 15px;
+    height: 215px;
+    padding: 0 0 30px 15px;
     width: 320px;
-    height: 262px;
  }
  .popup .project .abstimmen {
    clear: both;
