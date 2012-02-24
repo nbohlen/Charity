@@ -563,10 +563,9 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   display: none;
  }
 
-
 .popup .project header {
   height: 60px;
-  padding: 40px 0;
+  margin: 40px 0 20px;
 }
 
 .popup .project header a {
@@ -574,7 +573,20 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   margin-top: -14px;
 }
 
+.popup #choices_nav {
+  position: absolute;
+  bottom: 22px;
+  left: 330px;
+}
+
+.popup #choices_nav li { float: left; margin: 0 2px;}
+.popup #choices_nav li a { background: url(../pix/choices_nav.png); width: 16px; height: 16px; text-indent: -20000px; display: block;}
+.popup #choices_nav li a:hover,
+.popup #choices_nav li.active a { background-position: left -16px;}
+
 .popup .project header h3 { width: 500px;}
+
+.popup .project .project_description { height: 230px; overflow: hidden;}
 
   .popup .project .bigpic {
     float: right;
@@ -585,5 +597,5 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
  .popup .project .abstimmen {
    clear: both;
    display: block;
-   margin: 30px auto;
+   margin: 20px auto;
  }
