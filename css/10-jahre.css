@@ -311,17 +311,24 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 }
 
 .timeline .bubble {
+  background-color: white;
+  border: 1px solid #CCCCCC;
+  margin: 75px 0;
   padding: 20px;
+  position: relative;
   width: 350px;
-  position: absolute;
-  border: 1px solid #ccc;
 }
 
-.timeline .bubble .year {
-  position: absolute;
+.bubble:first-child { margin: 0;}
+
+
+.timeline .year_wrapper { width: 100%; overflow: visible; }
+
+.timeline .year_wrapper .year {
   font-size: 33px;
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 .timeline .bubble .arrow {
@@ -332,14 +339,15 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   top: 90px;
 }
 
-.timeline .bubble.left .arrow { background-position: left top; right: -23px;}
-.timeline .bubble.right .arrow { background-position: right top; left: -23px;}
+.timeline .left .bubble .arrow { background-position: left top; right: -23px;}
+.timeline .right .bubble .arrow { background-position: right top; left: -23px;}
 
-.timeline .bubble.left { left: 10px;}
-.timeline .bubble.right { right: 10px; }
+.timeline .column { width: 390px; }
+.timeline .left { float: left; }
+.timeline .right { float: right; margin-top: 150px; }
 
-.timeline .bubble.left .year { right: -115px; top: 100px; }
-.timeline .bubble.right .year { left: -115px; top: 100px; }
+.timeline .left .bubble .year { right: -115px; top: 100px; }
+.timeline .right .bubble .year { left: -115px; top: 100px; }
 
 #blog_roll .entry { position: relative; margin: 40px 0; padding: 0 40px;}
 #blog_roll .entry .left_col { position: absolute; }
