@@ -318,17 +318,24 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   padding: 20px;
   position: relative;
   width: 350px;
+  font-size: 14px;
 }
 
 .bubble:first-child { margin: 0;}
 
 
-.timeline .year_wrapper { width: 100%; overflow: visible; }
+.timeline .left .bubble img { float: left; margin-right: 10px; margin-bottom: 10px; max-width: 350px;}
+.timeline .right .bubble img { float: right; margin-left: 10px; margin-bottom: 10px; max-width: 350px;}
+.timeline .bubble ul { margin: 6px 10px; padding: 0;}
+.timeline .bubble ul li { list-style: disc;}
+
+.timeline .year_wrapper { width: 100%; overflow: hidden; clear: both; margin: 40px 0;}
 
 .timeline .year_wrapper .year {
   font-size: 33px;
   color: white;
   font-weight: bold;
+  line-height: 40px;
   text-align: center;
 }
 
@@ -337,15 +344,17 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   width: 23px;
   height: 36px;
   position: absolute;
-  top: 90px;
+  top: 40%;
 }
 
 .timeline .left .bubble .arrow { background-position: left top; right: -23px;}
 .timeline .right .bubble .arrow { background-position: right top; left: -23px;}
 
-.timeline .column { width: 390px; }
+.timeline .column { width: 392px; }
 .timeline .left { float: left; }
 .timeline .right { float: right; margin-top: 150px; }
+.timeline .y2006 .right,
+.timeline .y2004 .right { margin-top: 0;}
 
 .timeline .left .bubble .year { right: -115px; top: 100px; }
 .timeline .right .bubble .year { left: -115px; top: 100px; }
