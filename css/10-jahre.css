@@ -63,6 +63,8 @@ a:hover {
   line-height: 20px;
 }
 
+.home_teaser { background: #f6f6f6 url(../pix/kinderhaende_small.png) no-repeat 200px bottom !important;}
+
 p.alert { font-weight: bold; margin: 10px 0;}
 
 .ohne {
