@@ -376,10 +376,12 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 #footer .part1 {
   background-color: #e5e5e5;
   margin: 0 auto;
+  height: 100px;
 }
 
 #footer .part1 h2 {
-  line-height: 78px;
+  line-height: 100px;
+  float: left;
   margin: 0;
 }
 
@@ -388,7 +390,7 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
 #footer .part2 {
   position: relative;
   background-color: #ccc;
-  height: 196px;
+  height: 173px;
   font-size: 12px;
   width: 957px;
   margin: 0 auto;
@@ -411,6 +413,12 @@ ul.graph.medium li.about_80 { border-left-width: 352px; }
   color: #444444;
   font-size: 11px;
 }
+
+#footer .part1 a { background: url("../pix/follow_us.png") no-repeat left bottom; text-indent: -20000px; width: 75px; height: 100px; float: left; display: block; margin-left: 100px;}
+#footer .part1 a.googleplus { background-position: -75px bottom; }
+#footer .part1 a.twitter { background-position: -150px bottom; }
+#footer .part1 a.mail { background-position: -225px bottom; }
+
 
 /* month */
 #month h2 {
