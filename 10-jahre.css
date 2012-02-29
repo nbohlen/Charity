@@ -1,0 +1,892 @@
+html, body {
+    color: #444444;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+strong {
+    font-weight: bold;
+}
+body {
+    background-color: white;
+}
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+h2 {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 43px;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#content {
+    margin: 0 auto;
+    position: relative;
+    width: 957px;
+}
+.breit, .schmal, .ohne {
+    margin: 0 auto;
+    position: relative;
+}
+.breit {
+    background: url("10-jahre/pix/borduere_unten.png") no-repeat scroll center bottom transparent;
+    padding: 20px 28px 40px 29px;
+    width: 900px;
+}
+.schmal {
+    background: url("10-jahre/pix/scherpe_trans.png") repeat-y scroll center top #F6F6F6;
+    padding: 20px;
+    width: 900px;
+}
+.teaser_box {
+    text-align: center;
+}
+.teaser_box.staticpage {
+    padding-bottom: 60px;
+    padding-top: 40px;
+    text-align: left;
+}
+.teaser_box h2, .teaser_box p {
+    padding: 0 50px;
+}
+.teaser_box h2 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 14px;
+}
+.teaser_box p {
+    font-size: 16px;
+    line-height: 20px;
+}
+.home_teaser { background: url("10-jahre/pix/kinderhaende_small.png") no-repeat scroll 200px bottom #F6F6F6 !important; }
+.home_teaser h2 { font-size: 30px; line-height: 39px;}
+.home_teaser p { margin-bottom: 20px;}
+p.alert {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.ohne {
+    width: 740px;
+}
+#header {
+    background: url("10-jahre/pix/header_10_jahre.png") no-repeat scroll center top transparent;
+    height: 147px;
+    position: relative;
+}
+#header .logo img {
+    left: 8px;
+    position: absolute;
+    top: 37px;
+}
+#header h1 {
+    color: #888888;
+    font-size: 12px;
+    left: 61px;
+    position: absolute;
+    top: 69px;
+}
+#header #zehn_jahre {
+    display: block;
+    left: 410px;
+    position: absolute;
+    top: 0;
+}
+#header .links {
+    font-size: 10px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+#header .links {
+    list-style-type: none;
+}
+#header .links li {
+    border-left: 1px solid #DDDDDD;
+    display: inline;
+    padding: 0 4px;
+}
+#header .links li.first {
+    border-left: medium none;
+}
+#header .links a {
+    color: black;
+    text-decoration: none;
+}
+#header .links a:hover {
+    text-decoration: underline;
+}
+#header .catch_phrase {
+    color: #003A62;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 51px;
+}
+b {
+    font-weight: bold;
+}
+#header .menu {
+    background: url("10-jahre/pix/menu_background.png") repeat-x scroll center center transparent;
+    font-size: 13px;
+    height: 23px;
+    left: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 2px 20px;
+    position: absolute;
+    top: 117px;
+    width: 800px;
+}
+#header .menu li {
+    display: inline;
+    line-height: 24px;
+    max-width: 200px;
+    min-width: 100px;
+    padding: 0 20px 0 0;
+}
+#header .menu a {
+    color: #444444;
+}
+#header .call_to_action {
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: 115px;
+}
+.yellow_snow {
+    background: url("10-jahre/pix/yellow_snow.png") no-repeat scroll left bottom transparent;
+    padding-bottom: 5px;
+    padding-left: 3px;
+}
+.yellow_snow_large_center {
+    background: url("10-jahre/pix/yellow_snow_large.png") no-repeat scroll center bottom transparent;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    text-align: center;
+}
+
+.red_button { 
+  display: inline-block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+  padding: 0 30px;
+  text-decoration: none;
+  background-color: #E43834;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E43834), to(#C61910)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #E43834, #C61910); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #E43834, #C61910); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #E43834, #C61910); /* IE10 */
+  background-image:      -o-linear-gradient(top, #E43834, #C61910); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #E43834, #C61910);
+
+}
+
+.red_button:hover {
+  background-color: #C61910;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#C61910), to(#E43834)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #C61910, #E43834); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #C61910, #E43834); /* FF3.6 */
+  background-image:     -ms-linear-gradient(top, #C61910, #E43834); /* IE10 */
+  background-image:      -o-linear-gradient(top, #C61910, #E43834); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #C61910, #E43834);
+  text-decoration: none;
+}
+
+.red_button:active { background-image: none; background-color: #C61910;}
+
+.button {
+    background: url("10-jahre/pix/button_sprites.png") no-repeat scroll left top transparent;
+    color: white;
+    text-shadow: 0 -1px 1px #003A62;
+}
+.button.small {
+    font-size: 13px;
+    height: 27px;
+    padding: 5px 0 0 21px;
+    width: 142px;
+}
+.button:hover {
+    text-decoration: none;
+}
+.button.small:hover {
+    background-position: left -33px;
+}
+.button.small:active {
+    background-position: left -66px;
+    height: 24px;
+    padding: 8px 0 0 21px;
+    width: 142px;
+}
+.button.large {
+    background-position: left -100px;
+    display: block;
+    font-size: 21px;
+    height: 46px;
+    padding: 20px 0 0 33px;
+    text-shadow: 0 -1px 3px black;
+    width: 228px;
+}
+.button.large:hover {
+    background-position: left -167px;
+}
+.button.large:active {
+    background-position: left -233px;
+    height: 46px;
+    padding: 26px 0 0 44px;
+    width: 217px;
+}
+#teaser, #social_log {
+    background-image: none;
+}
+#teaser {
+    max-height: 1000px;
+    min-height: 300px;
+    z-index: 1;
+}
+#teaser .text {
+    padding: 20px 500px 30px 20px;
+}
+#teaser .text h2 {
+    margin-bottom: 20px;
+}
+#teaser img {
+    background-image: url("10-jahre/pix/teaser_bildrahmen.png");
+    height: 308px;
+    padding: 27px 20px 37px 36px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 451px;
+}
+ul.graph.small {
+    background-color: white;
+    list-style-type: none;
+    padding: 11px;
+    width: 450px;
+}
+ul.graph.small li {
+    background-color: #E5E5E5;
+    margin-top: 11px;
+    padding-left: 11px;
+}
+ul.graph.small li.first {
+    border-left: 1px solid #E43834;
+    margin-top: 0;
+}
+ul.graph.small li.second {
+    border-left: 1px solid #FCD209;
+}
+ul.graph.small li.third {
+    border-left: 1px solid #4687C7;
+}
+ul.graph.small li.fourth {
+    border-left: 1px solid #4BB549;
+}
+ul.graph.small li.fifth {
+    border-left: 1px solid #FFA10B;
+}
+ul.graph.small li.about_100 {
+    border-left-width: 300px;
+}
+ul.graph.small li.about_95 {
+    border-left-width: 285px;
+}
+ul.graph.small li.about_90 {
+    border-left-width: 270px;
+}
+ul.graph.small li.about_85 {
+    border-left-width: 255px;
+}
+ul.graph.small li.about_80 {
+    border-left-width: 240px;
+}
+ul.graph.medium {
+    background-color: white;
+    list-style-type: none;
+    margin-bottom: 100px;
+    width: 740px;
+}
+ul.graph.medium li {
+    background-color: #E5E5E5;
+    line-height: 30px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+ul.graph.medium li.first {
+    border-left: 1px solid #E43834;
+    margin-top: 0;
+}
+ul.graph.medium li.second {
+    border-left: 1px solid #FCD209;
+}
+ul.graph.medium li.third {
+    border-left: 1px solid #4687C7;
+}
+ul.graph.medium li.fourth {
+    border-left: 1px solid #4BB549;
+}
+ul.graph.medium li.fifth {
+    border-left: 1px solid #FFA10B;
+}
+ul.graph.medium li.about_100 {
+    border-left-width: 440px;
+}
+ul.graph.medium li.about_95 {
+    border-left-width: 418px;
+}
+ul.graph.medium li.about_90 {
+    border-left-width: 396px;
+}
+ul.graph.medium li.about_85 {
+    border-left-width: 374px;
+}
+ul.graph.medium li.about_80 {
+    border-left-width: 352px;
+}
+#so_stehts .talk_to_the_hand {
+    position: absolute;
+    right: 64px;
+    top: 100px;
+}
+
+#so_stehts .pfeil { position: absolute; left: 532px; top: 80px; }
+#so_gehts {
+    background-color: #F6F6F6;
+    background-image: none;
+    border-bottom: 60px solid #f6f6f6;
+    min-height: 600px;
+}
+#so_gehts .pane {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    bottom: 0;
+    display: none;
+    height: 430px;
+    left: 0;
+    padding-top: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+#so_gehts #first.pane {
+    background-image: url("10-jahre/pix/so_gehts_step_1.png");
+}
+#so_gehts #second.pane {
+    background-image: url("10-jahre/pix/so_gehts_step_2.png");
+}
+#so_gehts #third.pane {
+    background-image: url("10-jahre/pix/so_gehts_step_3.png");
+}
+#so_gehts .pane.active {
+    display: block;
+}
+#so_gehts ul {
+    background: url("10-jahre/pix/so_gehts_nav.png") no-repeat scroll 0 0 transparent;
+    height: 80px;
+}
+#so_gehts.first ul {
+    background-position: left top;
+}
+#so_gehts.second ul {
+    background-position: left -80px;
+}
+#so_gehts.third ul {
+    background-position: left -160px;
+}
+#so_gehts ul li {
+    float: left;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#so_gehts ul li.first {
+    padding-left: 70px;
+    width: 244px;
+}
+#so_gehts ul li.second {
+    padding-left: 65px;
+    width: 240px;
+}
+#so_gehts ul li.third {
+    padding-left: 70px;
+    width: 210px;
+}
+#so_gehts h2, #timeline_teaser h2, #blog_roll h2 {
+    text-align: center;
+}
+#timeline_teaser, #blog_roll {
+    background-image: url("10-jahre/pix/scherpe_trans.png");
+    background-position: center top;
+    background-repeat: repeat-y;
+}
+#timeline_teaser {
+    min-height: 500px;
+    padding-top: 60px;
+}
+#timeline_teaser .text {
+    background: url("10-jahre/pix/timeline_teaser_text.png") no-repeat scroll 0 0 transparent;
+    height: 280px;
+    margin-left: 80px;
+    margin-top: 60px;
+    padding: 30px 70px 15px 30px;
+    width: 440px;
+}
+#timeline_teaser .strip {
+    position: absolute;
+    right: 80px;
+    top: 120px;
+    width: 210px;
+}
+.timeline {
+    background: url("10-jahre/pix/timeline_middle.png") repeat-y scroll center top transparent;
+    min-height: 800px;
+    padding: 40px 10px;
+    position: relative;
+}
+.timeline .bubble {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    font-size: 14px;
+    margin: 75px 0;
+    padding: 20px;
+    position: relative;
+    width: 350px;
+}
+.bubble:first-child {
+    margin: 0;
+}
+.timeline .left .bubble img {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    max-width: 350px;
+}
+.timeline .right .bubble img {
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    max-width: 350px;
+}
+.timeline .bubble ul {
+    margin: 6px 10px;
+    padding: 0;
+}
+.timeline .bubble ul li {
+    list-style: disc outside none;
+}
+.timeline .year_wrapper {
+    clear: both;
+    margin: 40px 0;
+    overflow: hidden;
+    width: 100%;
+}
+.timeline .year_wrapper .year {
+    color: white;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+.timeline .bubble .arrow {
+    background: url("10-jahre/pix/bubble_arrows.png") no-repeat scroll 0 0 transparent;
+    height: 36px;
+    position: absolute;
+    top: 40%;
+    width: 23px;
+}
+.timeline .left .bubble .arrow {
+    background-position: left top;
+    right: -23px;
+}
+.timeline .right .bubble .arrow {
+    background-position: right top;
+    left: -23px;
+}
+.timeline .column {
+    width: 392px;
+}
+.timeline .left {
+    float: left;
+}
+.timeline .right {
+    float: right;
+    margin-top: 150px;
+}
+.timeline .y2006 .right, .timeline .y2004 .right {
+    margin-top: 0;
+}
+.timeline .left .bubble .year {
+    right: -115px;
+    top: 100px;
+}
+.timeline .right .bubble .year {
+    left: -115px;
+    top: 100px;
+}
+#blog_roll .entry {
+    margin: 40px 0;
+    padding: 0 40px;
+    position: relative;
+}
+#blog_roll .entry .left_col {
+    position: absolute;
+}
+#blog_roll .entry .left_col span.date {
+    display: block;
+    font-size: 11px;
+}
+#blog_roll .entry .entry_body {
+    padding-left: 300px;
+}
+.schniepel {
+    background: url("10-jahre/pix/schniepel.png") no-repeat scroll center top transparent;
+    height: 108px;
+    padding-bottom: 30px;
+}
+#footer {
+    background: url("10-jahre/pix/footer_background.png") repeat-x scroll left bottom transparent;
+}
+#footer .kinderhaende {
+    background: url("10-jahre/pix/kinderhaende.png") no-repeat scroll center top transparent;
+    height: 330px;
+    width: 100%;
+}
+#footer .part1 {
+    background-color: #E5E5E5;
+    height: 100px;
+    margin: 0 auto;
+}
+#footer .part1 h2 {
+    float: left;
+    line-height: 100px;
+    margin: 0;
+}
+#footer .part2 #footer_symbol {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+#footer .part2 {
+    background-color: #CCCCCC;
+    font-size: 12px;
+    height: 173px;
+    margin: 0 auto;
+    position: relative;
+    width: 957px;
+}
+#footer a {
+    text-decoration: none;
+}
+#footer a:hover {
+    text-decoration: underline;
+}
+#footer ul {
+    float: left;
+    list-style-type: none;
+    padding: 20px 20px 20px 0;
+    width: 120px;
+}
+#footer ul li {
+    margin: 3px 0;
+}
+#footer ul li a {
+    color: #444444;
+    font-size: 11px;
+}
+#footer .part1 a {
+    background: url("10-jahre/pix/follow_us.png") no-repeat scroll left bottom transparent;
+    display: block;
+    float: left;
+    height: 100px;
+    margin-left: 100px;
+    text-indent: -20000px;
+    width: 75px;
+}
+#footer .part1 a.googleplus {
+    background-position: -75px bottom;
+}
+#footer .part1 a.twitter {
+    background-position: -150px bottom;
+}
+#footer .part1 a.mail {
+    background-position: -225px bottom;
+}
+#month h2 {
+    background: url("10-jahre/pix/monat_schild.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 40px;
+    line-height: 63px;
+    margin: 10px auto 20px;
+    padding: 0;
+    text-align: center;
+    width: 500px;
+}
+#choices .choice_container {
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    width: 896px;
+}
+#choices {
+    padding-bottom: 80px;
+    padding-top: 0;
+}
+.choice_container .choice {
+    border-right: medium none;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    width: 179px;
+}
+.choice_container .first {
+    left: 0;
+}
+.choice_container .second {
+    left: 179px;
+}
+.choice_container .third {
+    left: 358px;
+}
+.choice_container .fourth {
+    left: 537px;
+}
+.choice_container .fifth {
+    left: 716px;
+}
+.choice_container .choice .information {
+    border: 1px solid #E5E5E5;
+    height: 247px;
+    left: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 1px;
+    width: 178px;
+}
+.choice_container .choice .fifth {
+    border-right: 1px solid #E5E5E5;
+}
+.choice_container .choice .information .public {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    height: 131px;
+    left: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    width: 160px;
+}
+.choice_container .choice .information .name {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    border: 1px solid #FFFFFF;
+    height: 46px;
+    left: 10px;
+    position: absolute;
+    top: 141px;
+    width: 158px;
+}
+.choice_container .choice .information .title {
+    margin-top: 200px;
+}
+.choice_container .choice .slider {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    background-color: #FFFFFF;
+    height: 357px;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+.choice_container .choice .slider:hover {
+    background-color: #D5D5D5;
+    left: 0;
+    position: absolute;
+    top: -130px;
+}
+.choice_container .choice .slider:hover .public {
+    opacity: 0;
+    top: -3px;
+}
+.choice_container .choice .slider:hover .name {
+    border: 1px solid #BBBBBB;
+}
+.choice {
+    cursor: pointer;
+}
+.choice .title {
+    text-align: center;
+}
+.choice .title h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+}
+.choice .title div {
+    font-size: 13px;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
+.choice .more {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.choice a.popup_trigger {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: underline;
+}
+.choice_container .choice a.abstimmen {
+    display: block;
+    margin: 260px auto 20px;
+}
+.popup {
+    background-color: white;
+    border: 1px solid #888888;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px #888888;
+    display: none;
+    height: 480px;
+    left: 50%;
+    margin-left: -330px;
+    margin-top: -290px;
+    padding: 10px 60px;
+    position: fixed;
+    top: 50%;
+    width: 645px;
+    z-index: 100;
+}
+.popup .controls a, .popup .controls a:hover {
+    text-decoration: none;
+}
+.switch_left, .switch_right {
+    height: 65px;
+    position: absolute;
+    width: 51px;
+}
+.switch_left {
+    background: url("10-jahre/pix/button_rechts_links.png") no-repeat scroll left top transparent;
+    left: -14px;
+}
+.switch_right {
+    background: url("10-jahre/pix/button_rechts_links.png") no-repeat scroll right top transparent;
+    right: -14px;
+}
+.popup .controls .switch_left, .popup .controls .switch_right {
+    top: 200px;
+}
+.switch_right:hover {
+    background-position: right bottom;
+}
+.switch_left:hover {
+    background-position: left bottom;
+}
+.popup .controls .closer {
+    background: url("10-jahre/pix/x_macht_zu.png") no-repeat scroll left top transparent;
+    height: 22px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22px;
+}
+.popup .controls .closer:hover {
+    background: url("10-jahre/pix/x_macht_zu.png") no-repeat scroll left bottom transparent;
+}
+.popup .switchable {
+    display: none;
+}
+.popup .project header {
+    height: 60px;
+    margin: 40px 0 20px;
+}
+.popup .project header a {
+    float: right;
+    margin-top: -14px;
+}
+.popup #choices_nav {
+    bottom: 22px;
+    left: 330px;
+    position: absolute;
+}
+.popup #choices_nav li {
+    float: left;
+    margin: 0 2px;
+}
+.popup #choices_nav li a {
+    background: url("10-jahre/pix/choices_nav.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 16px;
+    text-indent: -20000px;
+    width: 16px;
+}
+.popup #choices_nav li a:hover, .popup #choices_nav li.active a {
+    background-position: left -16px;
+}
+.popup .project header h3 {
+    width: 500px;
+}
+.popup .project .project_description {
+    height: 230px;
+    overflow: hidden;
+}
+.popup .project .bigpic {
+    float: right;
+    height: 215px;
+    padding: 0 0 30px 15px;
+    width: 320px;
+}
+.popup .project .abstimmen {
+    clear: both;
+    display: block;
+    margin: 20px auto;
+}
+#login_popup .titel {
+    display: none;
+    font: 30px arial;
+    left: 44px;
+    position: absolute;
+    right: 44px;
+    text-align: center;
+    top: 44px;
+}
+#register_login .chooser {
+    background-color: #E5E5E5;
+    background-image: -moz-linear-gradient(center top , #E5E5E5, #F6F6F6);
+    border: 1px solid #E5E5E5;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    height: 71px;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 82px;
+}
+#login_popup.anmelden .method.wide .label.anmelden, #login_popup.abstimmen .method.wide .label.abstimmen {
+    display: block;
+    font-weight: bold;
+    outline: 3px none red;
+    padding: 17px 0 0 120px;
+    text-align: left;
+    width: 300px;
+}
