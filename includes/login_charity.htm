@@ -1,0 +1,95 @@
+
+<style>
+  #shopapo_login_form { font-size: 10px;}
+  #shopapo_login_form div { margin: 10px 0px 0px 0px; padding: 0; height: 32px; width: 100% }
+  #shopapo_login_form label {
+    display: block; width: 80px; height: 100%; margin: 0px 10px 0px 0px; float: left; }
+  #shopapo_login_form input,
+  #shopapo_login_form button, 
+  #shopapo_login_form a {
+    display: block; width: 242px; height: 100%; margin: 0px; float: right; }
+</style>
+<div id="email_registrieren" class=" email_form" >
+  <h3>${login_page.email_registrieren ! "Melden Sie sich mit ihrer Email-Adresse an. Wir senden Ihnen eine Email mit einem Best&auml;tigungslink"}</h3>
+  <#if request.anmelden?? || request.new_password?? ><#assign style="display: none" /><#else><#assign style= "" /></#if>
+  <@form action="/10-jahre/login.go" method="get" ssl="true" style="${style}">
+    <input type="hidden" name="choice_id" value="null" />
+    <input type="hidden" name="login" value="email" />
+    <div>
+        <label for="vorname">Vorname:</label>
+        <input id="vorname" type="text" name="vorname" />
+    </div>
+    <div>
+        <label for="nachname">Nachname:</label>
+        <input id="nachname" type="text" name="nachname" />
+    </div>
+    <div>
+        <label for="email">Email-Adresse:</label>
+        <input id="email" type="text" name="email" />
+    </div>
+    <div>
+        <input class="button small" type="submit" name="register" value="Anmelden" />
+    </div>
+  </@form>    
+</div>
+<div id="lieber_anmelden" class="email_form" >
+  <h3>${login_page.lieber_anmelden ! "Sie haben sich schon angemeldet?"}</h3>
+  <#if request.anmelden??><#assign style= "" /><#else><#assign style="display: none" /></#if>
+  <@form action="/10-jahre/login.go" method="get" ssl="true" style="${style}">
+    <p>Bitte geben Sie Ihre Emailadresse ein, wir schicken Ihnen ein neues Passwort zu</p>
+    <input type="hidden" name="choice_id" value="null" />
+    <input type="hidden" name="login" value="email" />
+    <div>
+        <label for="email">Email-Adresse:</label>
+        <input id="email" type="text" name="email" />
+    </div>
+    <div>
+        <label for="email">Password:</label>
+        <input id="email" type="password" name="password" />
+    </div>
+    <div>
+        <input class="button small" type="submit" name="anmelden" value="Anmelden" />
+    </div>
+  </@form>
+</div>
+<div id="passwort_vergessen" class="email_form" >
+  <h3>${login_page.lieber_anmelden ! "Sie haben Ihre Passwort vergessen?"}</h3>
+  <#if request.new_password??><#assign style= "" /><#else><#assign style="display: none" /></#if>
+  <@form action="/10-jahre/login.go" method="get"  ssl="true" style="${style}">
+    <p>Bitte geben Sie Ihre Emailadresse ein, wir schicken Ihnen ein neues Passwort zu</p>
+    <input type="hidden" name="choice_id" value="null" />
+    <input type="hidden" name="type" value="email_new_password" />
+    <div>
+        <label for="email">Email-Adresse:</label>
+        <input id="email" type="text" name="email" />
+    </div>
+    <div>
+        <input class="button small" name="new_password" type="submit" value="Password anfordern" />
+    </div>
+  </@form>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    $(".email_form h3").click(function (event) {
+       var active = $(this).parent()[0];
+       $(".email_form").filter( function(index) { return (this != active) } ).find("form").slideUp();
+       $(active).find("form").slideDown(); 
+    })
+    /* $(".email_form form").submit(function () {
+      debugger; 
+      var $this = $(this)
+      $.post( $this.attr("action"), $this.serialize(), function (data) {
+        debugger;
+        if (data.success) {
+          document.location.reload();
+        } else {
+          for (field in data.bad_fields) {
+            $this.find("[name="+field+"]").attr("title", data.bad_fields[field]).addClass("bad")
+          } 
+        }
+      });
+      return false;
+    }) */
+});
+</script>

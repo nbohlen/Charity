@@ -1,0 +1,36 @@
+<!-- style>
+  #shopapo_login_form { font-size: 10px;}
+  #shopapo_login_form div { margin: 10px 0px 0px 0px; padding: 0; height: 32px; width: 100% }
+  #shopapo_login_form label {
+    display: block; width: 80px; height: 100%; margin: 0px 10px 0px 0px; float: left; }
+  #shopapo_login_form input,
+  #shopapo_login_form button, 
+  #shopapo_login_form a {
+    display: block; width: 242px; height: 100%; margin: 0px; float: right; }
+  #shopapo_login_form button {
+    border: none; background-position: 0px -297px }  
+  #shopapo_login_form button:hover {
+    background-position: 0px -330px }
+  #shopapo_login_form button:active {
+    background-position: 0px -363px }
+    
+</style -->
+<@form action="/10-jahre/login.go" method="get" name="login" id="shopapo_login_form"  ssl="true">
+    <input type="hidden" name="choice_id" value="null" />
+    <input type="hidden" name="login" value="shopapo" />
+    <p>Verwendenen Sie Ihre www.shop-apotheke.com Kundendaten, um abzustimmen</p>
+    <div>
+        <label for="shopapo_login">Benutzername:</label>
+        <input id="shopapo_login" type="text" name="shopapo_login" />
+    </div>
+    <div>
+        <label for="shopapo_password">Passwort:</label>
+        <input id="shopapo_password" type="password" name="password" />
+    </div>
+    <div>
+        <button class="button" type="submit">Jetzt abstimmen!</button>
+    </div>
+    <div>
+        <@a href="/pw_vergessen.htm">Passwort vergessen</@>
+    </div>
+</@form>    

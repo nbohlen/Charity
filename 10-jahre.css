@@ -12,6 +12,8 @@ strong {
 body {
     background-color: white;
 }
+body.small { background-color: #f5f5f5; width: 440px; height: 317px; }
+
 h1 {
     font-size: 50px;
     font-weight: normal;
@@ -45,12 +47,12 @@ a:hover {
     position: relative;
 }
 .breit {
-    background: url("/10-jahre/pix/borduere_unten.png") no-repeat scroll center bottom transparent;
+    background: url("10-jahre/pix/borduere_unten.png") no-repeat scroll center bottom transparent;
     padding: 20px 28px 40px 29px;
     width: 900px;
 }
 .schmal {
-    background: url("/10-jahre/pix/scherpe_trans.png") repeat-y scroll center top #F6F6F6;
+    background: url("10-jahre/pix/scherpe_trans.png") repeat-y scroll center top #F6F6F6;
     padding: 20px;
     width: 900px;
 }
@@ -74,7 +76,7 @@ a:hover {
     font-size: 16px;
     line-height: 20px;
 }
-.home_teaser { background: url("/10-jahre/pix/kinderhaende_small.png") no-repeat scroll 200px bottom #F6F6F6 !important; }
+.home_teaser { background: url("10-jahre/pix/kinderhaende_small.png") no-repeat scroll 200px bottom #F6F6F6 !important; }
 .home_teaser h2 { font-size: 30px; line-height: 39px;}
 .home_teaser p { margin-bottom: 20px;}
 p.alert {
@@ -85,7 +87,7 @@ p.alert {
     width: 740px;
 }
 #header {
-    background: url("/10-jahre/pix/header_10_jahre.png") no-repeat scroll center top transparent;
+    background: url("10-jahre/pix/header_10_jahre.png") no-repeat scroll center top transparent;
     height: 147px;
     position: relative;
 }
@@ -142,7 +144,7 @@ b {
     font-weight: bold;
 }
 #header .menu {
-    background: url("/10-jahre/pix/menu_background.png") repeat-x scroll center center transparent;
+    background: url("10-jahre/pix/menu_background.png") repeat-x scroll center center transparent;
     font-size: 13px;
     height: 23px;
     left: 10px;
@@ -170,12 +172,12 @@ b {
     top: 115px;
 }
 .yellow_snow {
-    background: url("/10-jahre/pix/yellow_snow.png") no-repeat scroll left bottom transparent;
+    background: url("10-jahre/pix/yellow_snow.png") no-repeat scroll left bottom transparent;
     padding-bottom: 5px;
     padding-left: 3px;
 }
 .yellow_snow_large_center {
-    background: url("/10-jahre/pix/yellow_snow_large.png") no-repeat scroll center bottom transparent;
+    background: url("10-jahre/pix/yellow_snow_large.png") no-repeat scroll center bottom transparent;
     padding-bottom: 10px;
     padding-left: 3px;
     text-align: center;
@@ -220,16 +222,19 @@ b {
   bottom: 30px;
 }
 
+
 .button {
-    background: url("/10-jahre/pix/button_sprites.png") no-repeat scroll left top transparent;
-    color: white;
-    text-shadow: 0 -1px 1px #003A62;
+  background: url("10-jahre/pix/button_sprites.png") no-repeat scroll left top transparent;
+  color: white;
+  text-shadow: 0 -1px 1px #003A62;
+  border: none;
 }
 .button.small {
     font-size: 13px;
     height: 27px;
     padding: 5px 0 0 21px;
     width: 142px;
+
 }
 .button:hover {
     text-decoration: none;
@@ -277,7 +282,7 @@ b {
     margin-bottom: 20px;
 }
 #teaser img {
-    background-image: url("/10-jahre/pix/teaser_bildrahmen.png");
+    background-image: url("10-jahre/pix/teaser_bildrahmen.png");
     height: 308px;
     padding: 27px 20px 37px 36px;
     position: absolute;
@@ -396,19 +401,19 @@ ul.graph.medium li.about_80 {
     width: 100%;
 }
 #so_gehts #first.pane {
-    background-image: url("/10-jahre/pix/so_gehts_step_1.png");
+    background-image: url("10-jahre/pix/so_gehts_step_1.png");
 }
 #so_gehts #second.pane {
-    background-image: url("/10-jahre/pix/so_gehts_step_2.png");
+    background-image: url("10-jahre/pix/so_gehts_step_2.png");
 }
 #so_gehts #third.pane {
-    background-image: url("/10-jahre/pix/so_gehts_step_3.png");
+    background-image: url("10-jahre/pix/so_gehts_step_3.png");
 }
 #so_gehts .pane.active {
     display: block;
 }
 #so_gehts ul {
-    background: url("/10-jahre/pix/so_gehts_nav.png") no-repeat scroll 0 0 transparent;
+    background: url("10-jahre/pix/so_gehts_nav.png") no-repeat scroll 0 0 transparent;
     height: 80px;
 }
 #so_gehts.first ul {
@@ -453,7 +458,7 @@ ul.graph.medium li.about_80 {
     text-align: center;
 }
 #timeline_teaser, #blog_roll {
-    background-image: url("/10-jahre/pix/scherpe_trans.png");
+    background-image: url("10-jahre/pix/scherpe_trans.png");
     background-position: center top;
     background-repeat: repeat-y;
 }
@@ -462,7 +467,7 @@ ul.graph.medium li.about_80 {
     padding-top: 60px;
 }
 #timeline_teaser .text {
-    background: url("/10-jahre/pix/timeline_teaser_text.png") no-repeat scroll 0 0 transparent;
+    background: url("10-jahre/pix/timeline_teaser_text.png") no-repeat scroll 0 0 transparent;
     height: 280px;
     margin-left: 80px;
     margin-top: 60px;
@@ -476,7 +481,7 @@ ul.graph.medium li.about_80 {
     width: 210px;
 }
 .timeline {
-    background: url("/10-jahre/pix/timeline_middle.png") repeat-y scroll center top transparent;
+    background: url("10-jahre/pix/timeline_middle.png") repeat-y scroll center top transparent;
     min-height: 800px;
     padding: 40px 10px;
     position: relative;
@@ -526,7 +531,7 @@ ul.graph.medium li.about_80 {
     text-align: center;
 }
 .timeline .bubble .arrow {
-    background: url("/10-jahre/pix/bubble_arrows.png") no-repeat scroll 0 0 transparent;
+    background: url("10-jahre/pix/bubble_arrows.png") no-repeat scroll 0 0 transparent;
     height: 36px;
     position: absolute;
     top: 40%;
@@ -577,15 +582,15 @@ ul.graph.medium li.about_80 {
     padding-left: 300px;
 }
 .schniepel {
-    background: url("/10-jahre/pix/schniepel.png") no-repeat scroll center top transparent;
+    background: url("10-jahre/pix/schniepel.png") no-repeat scroll center top transparent;
     height: 108px;
     padding-bottom: 30px;
 }
 #footer {
-    background: url("/10-jahre/pix/footer_background.png") repeat-x scroll left bottom transparent;
+    background: url("10-jahre/pix/footer_background.png") repeat-x scroll left bottom transparent;
 }
 #footer .kinderhaende {
-    background: url("/10-jahre/pix/kinderhaende.png") no-repeat scroll center top transparent;
+    background: url("10-jahre/pix/kinderhaende.png") no-repeat scroll center top transparent;
     height: 330px;
     width: 100%;
 }
@@ -632,7 +637,7 @@ ul.graph.medium li.about_80 {
     font-size: 11px;
 }
 #footer .part1 a {
-    background: url("/10-jahre/pix/follow_us.png") no-repeat scroll left bottom transparent;
+    background: url("10-jahre/pix/follow_us.png") no-repeat scroll left bottom transparent;
     display: block;
     float: left;
     height: 100px;
@@ -650,7 +655,7 @@ ul.graph.medium li.about_80 {
     background-position: -225px bottom;
 }
 #month h2 {
-    background: url("/10-jahre/pix/monat_schild.png") no-repeat scroll 0 0 transparent;
+    background: url("10-jahre/pix/monat_schild.png") no-repeat scroll 0 0 transparent;
     display: block;
     font-size: 40px;
     line-height: 63px;
@@ -803,11 +808,11 @@ ul.graph.medium li.about_80 {
     width: 51px;
 }
 .switch_left {
-    background: url("/10-jahre/pix/button_rechts_links.png") no-repeat scroll left top transparent;
+    background: url("10-jahre/pix/button_rechts_links.png") no-repeat scroll left top transparent;
     left: -14px;
 }
 .switch_right {
-    background: url("/10-jahre/pix/button_rechts_links.png") no-repeat scroll right top transparent;
+    background: url("10-jahre/pix/button_rechts_links.png") no-repeat scroll right top transparent;
     right: -14px;
 }
 .popup .controls .switch_left, .popup .controls .switch_right {
@@ -820,7 +825,7 @@ ul.graph.medium li.about_80 {
     background-position: left bottom;
 }
 .popup .controls .closer {
-    background: url("/10-jahre/pix/x_macht_zu.png") no-repeat scroll left top transparent;
+    background: url("10-jahre/pix/x_macht_zu.png") no-repeat scroll left top transparent;
     height: 22px;
     position: absolute;
     right: 10px;
@@ -828,7 +833,7 @@ ul.graph.medium li.about_80 {
     width: 22px;
 }
 .popup .controls .closer:hover {
-    background: url("/10-jahre/pix/x_macht_zu.png") no-repeat scroll left bottom transparent;
+    background: url("10-jahre/pix/x_macht_zu.png") no-repeat scroll left bottom transparent;
 }
 .popup .switchable {
     display: none;
@@ -851,7 +856,7 @@ ul.graph.medium li.about_80 {
     margin: 0 2px;
 }
 .popup #choices_nav li a {
-    background: url("/10-jahre/pix/choices_nav.png") repeat scroll 0 0 transparent;
+    background: url("10-jahre/pix/choices_nav.png") repeat scroll 0 0 transparent;
     display: block;
     height: 16px;
     text-indent: -20000px;
@@ -918,3 +923,19 @@ ul.graph.medium li.about_80 {
     text-align: left;
     width: 300px;
 }
+
+#shopapo_login_form label, .email_form label { position: absolute; top: 4px; }
+#shopapo_login_form input, .email_form input { margin-left: 125px; padding: 4px; width: 200px;}
+#shopapo_login_form div, .email_form div { margin: 10px 0; position: relative;}
+#shopapo_login_form .buttons input, .email_form .buttons input,
+#shopapo_login_form .buttons input:active, .email_form .buttons input:active { 
+  height: 32px;
+  padding: 1px 5px 5px 23px;
+  text-align: left;
+  width: 167px;
+}
+#shopapo_login_form .buttons input:active, .email_form .buttons input:active {
+  padding: 4px 5px 5px 20px;
+  width: 170px;
+}
+.forgot a { font-size: 12px; margin-left: 125px; }
