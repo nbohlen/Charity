@@ -414,6 +414,18 @@ ul.graph.medium li.about_80 {
 #so_gehts.third ul {
     background-position: left -160px;
 }
+
+#so_gehts .controls {
+  left: 0;
+  position: absolute;
+  top: 220px;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+#so_gehts:hover .controls { display: block;}
+
 #so_gehts ul li {
     float: left;
     padding-bottom: 30px;
@@ -848,18 +860,28 @@ ul.graph.medium li.about_80 {
 .popup .project .project_description {
     height: 230px;
     overflow: hidden;
+    position: relative;
 }
+
+.popup .project .project_description .url_to_mpo {
+  font-size: 12px;
+  left: 396px;
+  position: absolute;
+  top: 205px;
+}
+
 .popup .project .bigpic {
     float: right;
-    height: 215px;
+    height: 200px;
     padding: 0 0 30px 15px;
-    width: 320px;
+    width: 250px;
 }
 .popup .project .abstimmen {
     clear: both;
     display: block;
     margin: 20px auto;
 }
+
 #login_popup .titel {
     display: none;
     font: 30px arial;
