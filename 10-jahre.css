@@ -400,6 +400,12 @@ ul.graph.medium li.about_80 {
     text-align: center;
     width: 100%;
 }
+
+#so_gehts.so_gehts_large .pane {
+  position: relative;
+  display: block;
+}
+
 #so_gehts #first.pane {
     background-image: url("10-jahre/pix/so_gehts_step_1.png");
 }
@@ -818,6 +824,8 @@ ul.graph.medium li.about_80 {
 .popup .controls .switch_left, .popup .controls .switch_right {
     top: 200px;
 }
+.controls a { text-decoration: none; }
+
 .switch_right:hover {
     background-position: right bottom;
 }
