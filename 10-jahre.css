@@ -731,16 +731,17 @@ ul.graph.medium li.about_80 {
 }
 .choice_container .choice .information .public {
     -moz-transition: all 0.5s ease-in-out 0s;
-    height: 131px;
+    height: 130px;
     left: 10px;
     opacity: 1;
     position: absolute;
     top: 10px;
-    width: 160px;
+    width: 158px;
+    border: 1px solid #e5e5e5;
 }
 .choice_container .choice .information .name {
     -moz-transition: all 0.5s ease-in-out 0s;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #e5e5e5;
     height: 46px;
     left: 10px;
     position: absolute;
@@ -752,7 +753,7 @@ ul.graph.medium li.about_80 {
 }
 .choice_container .choice .slider {
     -moz-transition: all 0.5s ease-in-out 0s;
-    background-color: #FFFFFF;
+    background: #f6f6f6 url("10-jahre/pix/whiteborder.png") repeat-x top left ;
     height: 357px;
     left: 0;
     padding: 10px;
